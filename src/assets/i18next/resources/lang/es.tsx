@@ -489,7 +489,7 @@ export const Es = {
   },
   Cost: {
     rates: {
-      title: 'Conoce Nuestras Tarifas',
+      title: 'Tarifas transparentes',
       description:
         'Te ofrecemos tarifas transparentes y fáciles de entender, así como herramientas de cobro que se ajustan a cualquier tipo de comercio o emprendedor. <br />Queremos ser la herramienta perfecta para hacer crecer tu negocio.'
     },

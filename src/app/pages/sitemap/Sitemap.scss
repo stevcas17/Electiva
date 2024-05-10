@@ -1,0 +1,184 @@
+.sitemap {
+  width: 100%;
+  &__container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-top: 81px;
+    .accordion {
+      width: 90%;
+      margin: 0 auto;
+      margin-bottom: 1rem;
+      @media screen and (min-width: 576px) {
+        width: 60%;
+        margin: 2rem auto;
+      }
+      @media screen and (min-width: 998px) {
+        margin-top: 3rem;
+      }
+      @media screen and (min-width: 1200px) {
+        margin-bottom: 4rem;
+      }
+      @media screen and (min-width: 1440px) {
+        margin-bottom: 5rem;
+      }
+      @media screen and (min-width: 1600px) {
+        margin-bottom: 6rem;
+      }
+      .MuiPaper-root .MuiAccordionSummary-root {
+        @media screen and (min-width: 740px) {
+          padding-left: 1.5rem !important;
+          padding-right: 1rem !important;
+        }
+      }
+      .MuiPaper-root .MuiCollapse-root .MuiCollapse-wrapperInner .MuiAccordionDetails-root {
+        @media screen and (min-width: 576px) {
+          padding: 8px 16px 16px !important;
+          padding-left: 5% !important;
+        }
+      }
+      &__card {
+        background-color: var(--white-background);
+        width: 100%;
+        margin-bottom: 1.5rem;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        border: 1px solid transparent;
+        border-radius: 8px !important;
+        &::before {
+          content: unset;
+        }
+        &-title,
+        &-content {
+          &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 12px;
+            height: 100%;
+            background-color: var(--primary-dark-blue);
+            border-top-left-radius: 8px;
+            border-bottom-left-radius: 8px;
+          }
+        }
+        &-title {
+          padding-left: 1.25rem;
+          font-weight: 600;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: normal;
+          color: var(--grayscale-label);
+          width: 100%;
+          height: 52px;
+          min-height: unset !important;
+          .MuiAccordionSummary-expandIconWrapper {
+            transform: rotate(90deg);
+            transition: 0.35s all ease-in-out;
+          }
+          .MuiAccordionSummary-expandIconWrapper.Mui-expanded {
+            transform: rotate(270deg);
+          }
+          span {
+            font-size: 16px !important;
+            font-weight: 600;
+            line-height: 24px;
+            color: var(--primary-dark-blue);
+          }
+          @media screen and (min-width: 740px) {
+            padding-left: 1.5rem;
+            span {
+              font-size: 24px !important;
+              line-height: 32px;
+            }
+          }
+        }
+        &-content {
+          width: auto;
+          padding-left: 8%;
+          padding-bottom: 0.25rem;
+          .link__container {
+            margin-bottom: 1.75rem;
+            .link {
+              font-weight: 400;
+              font-size: 18px;
+              line-height: 100%;
+              color: var(--color-03-on-primary-a-high-emphasis);
+              text-decoration: underline;
+              cursor: pointer;
+            }
+          }
+          @media screen and (min-width: 576px) {
+            padding-left: 5%;
+          }
+        }
+        .MuiCollapse-entered,
+        .MuiCollapse-hidden {
+          width: 100%;
+        }
+        &-btn {
+          position: relative;
+          cursor: pointer;
+          .accordion__card-title {
+            display: flex;
+            align-items: center;
+          }
+          svg {
+            position: absolute;
+            right: 1rem;
+          }
+        }
+      }
+    }
+  }
+  &__header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 0.75rem 0;
+    width: 100%;
+    background-color: var(--white);
+    @media only screen and (min-width: 576px) {
+      padding: 1.75rem 0;
+    }
+    @media only screen and (min-width: 992px) {
+      padding: 2.5rem 0;
+    }
+    &-text {
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 32px;
+      color: var(--header-text);
+      @media only screen and (min-width: 576px) {
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 59px;
+      }
+    }
+  }
+  &__body {
+    width: 100%;
+    background-color: var(--gou-grayscale-light-100);
+    padding: 2rem 0;
+    @media only screen and (min-width: 992px) {
+      padding: 0;
+    }
+  }
+  .icon {
+    width: 40px;
+    height: 45px;
+    margin-right: 0.75rem;
+    @media only screen and (min-width: 768px) {
+      width: 57px;
+      height: 57px;
+      margin-right: 1.25rem;
+    }
+    &__image {
+      width: 'inherit';
+      height: 'inherit';
+    }
+  }
+}

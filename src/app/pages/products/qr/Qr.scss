@@ -1,0 +1,320 @@
+@import '../../../../styles/tools/base-breakpoints.scss';
+
+.container-products-qr {
+  background-color: var(--gou-grayscale-white);
+  border-radius: 0px 32px 32px 32px;
+  padding-top: 64px;
+  padding-bottom: 80px;
+  width: 100%;
+  & h1 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    margin: 0;
+    @include for-cellphone-only {
+      line-height: 49px;
+      font-size: 40px;
+    }
+  }
+  & p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0;
+    //padding: 24px 0 32px 0;
+  }
+  @include media(for-cellphone-only) {
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -ms-border-radius: 0px;
+    -o-border-radius: 0px;
+  }
+  &__section1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0;
+    background-color: #f2f7ff;
+    margin: 0px 48px 48px 48px;
+    padding-bottom: 260px;
+    border-radius: 32px;
+    -webkit-border-radius: 32px;
+    -moz-border-radius: 32px;
+    -ms-border-radius: 32px;
+    -o-border-radius: 32px;
+
+    @include media(for-cellphone-only) {
+      display: block;
+      padding-bottom: 350px;
+    }
+    @include for-tablet-only {
+      grid-template-columns: repeat(10, 1fr);
+      gap: 16px;
+      padding-top: 65px;
+    }
+    @include for-medium-desktop {
+      padding-bottom: 354px;
+      padding-top: 52px;
+      grid-template-columns: repeat(10, 1fr);
+      gap: 16px;
+    }
+    @include for-large-desktop {
+      padding-top: 70px;
+      grid-template-columns: repeat(10, 1fr);
+      gap: 16px;
+    }
+    .products__link-image {
+      margin: 0 auto;
+      max-width: 248px;
+      height: 310px;
+      @include for-tablet-only {
+        max-width: 321px;
+        height: 553px;
+        margin: -18px 0 24px 48px;
+        grid-column: span 5;
+      }
+      @include for-medium-desktop {
+        max-width: 464px;
+        height: 553px;
+        margin: -18px 0 24px 48px;
+        grid-column: span 5;
+      }
+      @include for-large-desktop {
+        max-width: 519px;
+        //height: 527px;
+        margin: -36px 0 0 109px;
+        grid-column: span 5;
+      }
+    }
+    .products__link-description {
+      padding: 32px 14px 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      font-family: 'Montserrat', sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 32px;
+      line-height: 39px;
+      color: #19223d;
+      & h1 {
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 39px;
+      }
+      .description-text {
+        margin-top: 24px;
+      }
+      @include for-tablet-only {
+        margin-left: -77px;
+        padding: 0px 41px 0;
+        grid-column: span 5;
+      }
+      @include for-medium-desktop {
+        padding: 0 25px 0 0;
+        grid-column: span 5;
+      }
+      @include for-large-desktop {
+        padding: 0 93px 0 0;
+        grid-column: span 5;
+        //margin-top: -200px;
+      }
+
+      .products__link-button {
+        margin-top: 22px;
+      }
+      .products__link-button,
+      .products__pasarela-button,
+      .products__privacy-button {
+        background: #00ddf4 !important;
+        color: #000927;
+        border-radius: 32px;
+        border: none;
+        height: 56px;
+        width: 196px;
+        font-size: 16px;
+        line-height: 20px;
+        @include media(for-cellphone-only, for-tablet-only) {
+          margin-top: 32px;
+        }
+      }
+      .products__link-use {
+        @include media(for-large-desktop, for-medium-desktop) {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          padding-bottom: 72px;
+          margin-top: 20px;
+        }
+        @include media(for-tablet-only) {
+          padding-bottom: 72px;
+          width: 547px;
+          margin-left: -240px;
+        }
+
+        .products__link-title {
+          font-family: 'Montserrat', sans-serif;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 24px;
+          line-height: 32px;
+          color: #313b54;
+
+          @include media(for-cellphone-only, for-tablet-only) {
+            margin-top: 52px;
+          }
+        }
+        .products__link-cards {
+          margin-top: 12px;
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-start;
+          gap: 52px;
+          @include media(for-cellphone-only) {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+          }
+          .products__link-cardItem {
+            @include for-cellphone-only {
+              width: 179px;
+            }
+            img {
+              width: 56px;
+            }
+          }
+        }
+      }
+    }
+  }
+  &__section2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background: #19223d;
+    border-radius: 32px;
+    width: 80%;
+    margin-inline: 10%;
+    margin-top: -350px;
+    @include media(for-cellphone-only, for-tablet-only) {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      margin-inline: 0%;
+    }
+    // display: grid;
+    // grid-template-columns: 1fr;
+    // @include for-medium-desktop {
+    //   grid-template-columns: repeat(10, 1fr);
+    //   gap: 16px;
+    // }
+    // @include for-large-desktop {
+    //   grid-template-columns: repeat(10, 1fr);
+    //   gap: 16px;
+    // }
+    .products__link-description {
+      grid-column: span 4;
+      color: white;
+      padding: 25px 0 40px 27px;
+      width: 50%;
+      @include media(for-cellphone-only, for-tablet-only) {
+        width: 100%;
+      }
+      .products__link-button,
+      .products__pasarela-button,
+      .products__privacy-button {
+        background: #00ddf4 !important;
+        color: #000927;
+        border-radius: 32px;
+        border: none;
+        height: 56px;
+        width: 258px !important;
+        font-size: 16px;
+        line-height: 20px;
+      }
+      .benefits-items-1 {
+        margin: 14px 37px 0 0;
+      }
+      .benefits-items-2 {
+        margin: 12px 49px 0 0;
+      }
+      .benefits-items-3 {
+        margin: 12px 30px 24px 0;
+      }
+      @include for-tablet-only {
+        padding: 66px 49px 50px;
+        .products__link-button {
+          margin: 0 0 49px 5px;
+        }
+      }
+      @include for-medium-desktop {
+        padding: 126px 66px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .products__link-button {
+          margin: 0 0 71px 5px;
+        }
+      }
+      @include for-large-desktop {
+        padding: 126px 66px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .products__link-button {
+          margin: 0 0 71px 5px;
+        }
+      }
+      @include for-cellphone-only {
+        .benefits-items-1 {
+          margin: 32px 0 0 5px;
+          //width: 228px;
+        }
+        .benefits-items-2 {
+          margin: 12px 0 0 5px;
+          //width: 245px;
+        }
+        .benefits-items-3 {
+          margin: 12px 0 24px 5px;
+          //width: 403px;
+        }
+      }
+    }
+    .products__link-image {
+      margin-top: 43px;
+      max-width: 556px;
+      // margin: 0 auto;
+      // @include for-cellphone-only {
+      //   max-width: 414px;
+      // }
+      // @include for-medium-desktop {
+      //   max-width: 414px;
+      // }
+      // @include for-large-desktop {
+      //   max-width: 414px;
+      // }
+    }
+
+    // .section2-container {
+    //   // grid-column-start: 1;
+    //   // grid-column-end: 11;
+    //   // display: grid;
+    //   // grid-template-columns: 1fr;
+    //   // background: #f2f7ff;
+    //   // border-radius: 12px;
+    //   // @include for-medium-desktop {
+    //   //   grid-template-columns: repeat(8, 1fr);
+    //   //   gap: 16px;
+    //   //   margin: 0 93px;
+    //   // }
+    //   // @include for-large-desktop {
+    //   //   grid-template-columns: repeat(8, 1fr);
+    //   //   gap: 16px;
+    //   //   margin: 0 93px;
+    //   // }
+
+    // }
+  }
+}

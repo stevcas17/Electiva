@@ -1,0 +1,176 @@
+.options-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: calc(100vh - 115px);
+  overflow: auto;
+  transition: all 0.3s ease-in-out;
+  &__menu-item {
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 30px;
+    font-size: 16px;
+    padding: 11px 8px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: var(--primary-dark);
+    transition: all 0.35s ease-in-out;
+    &:hover {
+      background-color: var(--secondary-light-100);
+      color: var(--brand-dark-blue);
+      & .menu-item-title {
+        color: var(--primary-dark);
+      }
+    }
+    & .menu-item-image {
+      margin-right: 19.5px;
+      width: 24px;
+      height: 24px;
+    }
+    & .menu-item-title {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 20px;
+      margin-right: auto;
+      color: var(--primary-dark-600);
+    }
+    & span {
+      display: none;
+      font-size: 21px;
+      color: var(--brand-dark-blue);
+    }
+    &.active {
+      background-color: var(--gou-light-sky-blue);
+      border-radius: 8px;
+      -webkit-border-radius: 8px;
+      -moz-border-radius: 8px;
+      -ms-border-radius: 8px;
+      -o-border-radius: 8px;
+      padding: 11px 8px;
+      & .menu-item-title {
+        color: var(--primary-dark);
+      }
+      & span {
+        display: inherit;
+      }
+    }
+    .menu-short {
+      .menu-item-image {
+        margin-right: 16px;
+      }
+    }
+    &.menu-final-item {
+      margin-bottom: 32px;
+    }
+  }
+  & .dropdown-menu {
+    max-height: 0;
+    opacity: 0;
+    box-sizing: content-box;
+    visibility: hidden;
+    transition: all 0.45s ease-in-out;
+    &.show {
+      max-height: 20em;
+      opacity: 1;
+      visibility: visible;
+      transition: all 0.45s ease-in-out;
+      margin-top: -18px;
+    }
+    &-arrow {
+      transition: all 0.35s ease-in-out;
+      transform: rotate(180deg);
+      &.active {
+        transform: rotate(0deg);
+      }
+    }
+    &-dot {
+      width: 6px;
+      height: 6px;
+      background-color: #4a546a;
+      border-radius: 50%;
+      transition: all 0.45s ease-in-out;
+    }
+    &-point {
+      width: 6px;
+      height: 6px;
+      background-color: #00ddf4;
+      border-radius: 50%;
+      margin-left: auto;
+    }
+    &-icon {
+      padding-right: 12px;
+      padding-left: 3px;
+    }
+    &-title {
+      font-weight: 500;
+      color: var(--primary-dark-600);
+      transition: all 0.45s ease-in-out;
+    }
+    &-item {
+      border-radius: 8px;
+      -webkit-border-radius: 8px;
+      -moz-border-radius: 8px;
+      -ms-border-radius: 8px;
+      -o-border-radius: 8px;
+      padding: 8px;
+      cursor: pointer;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      font-size: 14px;
+      line-height: 18px;
+      transition: all 0.35s ease-in-out;
+      &:not(:last-child) {
+        margin-bottom: 8px;
+      }
+      &:last-child {
+        margin-bottom: 30px;
+      }
+      &:hover,
+      &.active {
+        color: var(--secondary-dark-1000);
+        background-color: var(--gou-light-sky-blue);
+        .dropdown-menu-title {
+          color: inherit;
+        }
+        .dropdown-menu-dot {
+          background-color: var(--secondary-dark-1000);
+        }
+      }
+      .dropdown-menu-arrow {
+        margin-left: auto;
+        transform: unset;
+      }
+    }
+  }
+  & .nav-hr {
+    height: 1px;
+    width: 100%;
+    background-color: var(--secondary-light-200);
+    margin-bottom: 32px;
+  }
+  & .login-info {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    background-color: var(--gou-grayscale-light-100);
+    color: var(--primary-dark-600);
+    margin-bottom: 30px;
+    padding: 15px 22px;
+    border-radius: 12px;
+    &__content {
+      span {
+        font-size: 12px;
+      }
+      &--strong {
+        font-weight: 600;
+      }
+      &--capitalized {
+        text-transform: capitalize;
+      }
+    }
+  }
+}

@@ -1,0 +1,95 @@
+.security {
+  $self: &;
+  background-color: var(--gou-grayscale-light-100);
+  width: 100%;
+  margin-top: 81px;
+  @media only screen and (min-width: 1200px) {
+    margin-top: 96px;
+  }
+  &-header {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2rem;
+    @media only screen and (min-width: 740px) {
+      padding-top: 4.5rem;
+    }
+    #{$self}-title {
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 32px;
+      color: var(--header-text);
+      margin: 0.75rem 0;
+      @media only screen and (min-width: 740px) {
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 59px;
+        margin: 1rem 0;
+      }
+    }
+    #{$self}-description {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      color: var(--header-text);
+      max-width: 60%;
+      text-align: center;
+      @media only screen and (min-width: 740px) {
+        max-width: unset;
+      }
+    }
+  }
+  &-body {
+    display: flex;
+    max-width: 1440px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    flex-direction: column;
+    @media only screen and (min-width: 740px) {
+      margin: 3.5rem auto;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      padding: 0 2rem;
+      grid-gap: 32px 24px;
+      flex-direction: row;
+    }
+    @media only screen and (min-width: 992px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  &-card {
+    padding: 1.25rem;
+    background-color: #fff;
+    border: 1px solid #cfd8e6;
+    border-radius: 16px;
+    margin-bottom: 1.5rem;
+    display: grid;
+    grid-template-rows: 4rem auto;
+    height: auto;
+    @media only screen and (min-width: 740px) {
+      height: 235px;
+      margin-bottom: unset;
+      padding-right: 1.25rem;
+    }
+    &-icon {
+      margin-bottom: 1rem;
+    }
+    &-description {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 130%;
+      color: var(--color-03-on-primary-a-high-emphasis);
+      max-width: 80%;
+      align-self: center;
+      @media only screen and (min-width: 740px) {
+        max-width: 98%;
+      }
+      &.full-width {
+        @media only screen and (min-width: 740px) {
+          max-width: unset;
+        }
+      }
+    }
+  }
+}

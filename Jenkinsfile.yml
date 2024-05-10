@@ -1,0 +1,19 @@
+version: "1"
+
+spa:
+  invalidationPaths:
+    - "/index.html"
+
+  stacks:
+    - stack: 'dev'
+      invalidationPaths:
+        - "/assets/*"
+        - "/styles/*"
+
+    - stack: 'stg'
+      invalidationPaths:
+        - "/*"
+
+    - stack: 'pro'
+      invalidationPaths:
+        - "/*"

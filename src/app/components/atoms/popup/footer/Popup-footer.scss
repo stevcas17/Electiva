@@ -1,0 +1,12 @@
+.popup-footer {
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 16px;
+  display: flex;
+
+  div {
+    cursor: pointer;
+    height: 48px;
+    width: auto;
+  }
+}

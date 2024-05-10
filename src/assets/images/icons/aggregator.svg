@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW 2021 (64-Bit Versión de evaluación) -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="26.857mm" height="26.857mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 506.57 506.57"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ xmlns:xodm="http://www.corel.com/coreldraw/odm/2003">
+ <defs>
+  <font id="FontID0" horiz-adv-x="666" font-variant="normal" class="str1" style="fill-rule:nonzero" font-style="normal" font-weight="400">
+	<font-face 
+		font-family="Arial">
+		<font-face-src>
+			<font-face-name name="Arial"/>
+		</font-face-src>
+	</font-face>
+   <missing-glyph><path d="M0 0z"/></missing-glyph>
+   <glyph unicode="A" horiz-adv-x="666" d="M-1.50065 0l274.667 716.002 104.169 0 291.497 -716.002 -107.833 0 -82.8324 217.001 -301.5 0 -77.6674 -217.001 -100.5 0zm205.999 294.001l244 0 -74.6661 198.5c-22.4967,60.3314 -39.4968,110.167 -51.3318,149.498 -9.83275,-46.6641 -22.9983,-92.4994 -39.5011,-137.833l-78.5006 -210.165z"/>
+  </font>
+  <style type="text/css">
+   <![CDATA[
+    @font-face { font-family:"Arial";font-variant:normal;font-style:normal;font-weight:normal;src:url("#FontID0") format(svg)}
+    .str1 {stroke-width:3.32;stroke-miterlimit:22.9256}
+    .str0 {stroke:#E73743;stroke-width:3.77;stroke-miterlimit:22.9256}
+    .str2 {stroke:#FEFEFE;stroke-width:1.44;stroke-miterlimit:22.9256}
+    .fil1 {fill:#FEFEFE}
+    .fil0 {fill:#E73743}
+    .fnt0 {font-weight:normal;font-size:432.38px;font-family:'Arial'}
+   ]]>
+  </style>
+ </defs>
+ <g id="Capa_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <rect class="fil0 str0" x="1.89" y="1.89" width="502.8" height="502.8" rx="70.64" ry="70.64"/>
+  <text x="109.02" y="408.08"  class="fil1 str2 fnt0">A</text>
+ </g>
+</svg>

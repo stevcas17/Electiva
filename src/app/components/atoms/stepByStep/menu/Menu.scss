@@ -1,0 +1,73 @@
+.menu-step {
+  border-radius: 0 12px 12px 0;
+  background-color: white;
+  padding-inline: 16px;
+  position: absolute;
+  padding-top: 32px;
+  min-height: 100vh;
+  min-width: 244px;
+  width: 244px;
+  z-index: 4;
+  top: 0;
+
+  &__logo {
+    justify-content: center;
+    padding-bottom: 38px;
+    flex-direction: row;
+    display: flex;
+  }
+  &__greeting,
+  &__user-info,
+  &__nav-hr {
+    display: none;
+  }
+  @media screen and (min-width: 1440px) {
+    min-height: calc(100vh - 72px);
+    justify-content: flex-start;
+    flex-direction: column;
+    padding-inline: 16px;
+    position: relative;
+    border-radius: 0;
+    display: flex;
+
+    &__logo {
+      display: none;
+    }
+    &__greeting {
+      display: block;
+      color: var(--brand-dark-blue);
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 32px;
+      margin: 32px 0;
+    }
+    &__user-info {
+      display: flex;
+      align-items: center;
+      justify-content: start;
+      margin-bottom: 32px;
+      &-user-photo {
+        width: 48px;
+        height: 48px;
+        margin-right: 16px;
+        margin-left: -4px;
+        border-radius: 50%;
+        border: solid 1px var(--brand-dark-blue);
+        // padding: 15px;
+        color: var(--grayscale-placeholder);
+        background-color: var(--grayscale-input-background);
+      }
+      &-user-name {
+        font-weight: 500;
+        color: var(--secondary-dark-800);
+        font-size: 18px;
+      }
+    }
+    &__nav-hr {
+      display: block;
+      height: 1px;
+      background-color: var(--secondary-light-200);
+      margin-bottom: 32px;
+    }
+  }
+}

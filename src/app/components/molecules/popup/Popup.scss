@@ -1,0 +1,33 @@
+.container-popup {
+  box-shadow: 0 32px 32px rgba(0, 9, 39, 0.08);
+  background-color: var(--gou-grayscale-dark-800);
+  padding: 16px 0 20px 0;
+  border-radius: 16px;
+  text-align: center;
+  position: absolute;
+  margin: auto auto;
+  min-width: 288px;
+  max-width: 288px;
+  width: 288px;
+  z-index: 30;
+
+  &__close {
+    justify-content: end;
+    padding: 0 16px;
+    display: flex;
+    height: 30px;
+
+    div {
+      margin-left: auto;
+
+      &:hover {
+        cursor: pointer;
+        filter: opacity(0.8);
+      }
+    }
+  }
+
+  @media screen and (min-width: 744px) {
+    padding: 16px 0 32px 0;
+  }
+}

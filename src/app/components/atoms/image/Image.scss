@@ -1,0 +1,29 @@
+.img-next {
+  margin-left: auto;
+}
+
+.icons {
+  width: 30;
+}
+
+.header {
+  width: 100%;
+}
+
+.logo {
+  height: 38px;
+  margin-top: -22px;
+  width: 85px;
+}
+
+@media (min-width: 768px) {
+  .header {
+    display: none;
+  }
+
+  .logo {
+    margin-top: 0;
+    width: 130;
+    height: 58px;
+  }
+}

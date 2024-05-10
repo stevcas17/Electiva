@@ -1,0 +1,142 @@
+.container__typebox {
+  position: relative;
+  background-color: var(--grayscale-background);
+  min-height: 100vh;
+  overflow: inherit;
+  &-background {
+    display: flex;
+    width: 100%;
+    & .circle-1,
+    & .circle-2,
+    & .circle-3 {
+      position: absolute;
+    }
+    & .circle-1 {
+      transform: translate(70vw, 18vh);
+    }
+    & .circle-2 {
+      transform: translate(16vw, 49vh);
+    }
+    & .circle-3 {
+      transform: translate(-6vw, 83vh);
+    }
+  }
+  @media screen and (max-width: 1024px) {
+    &-background {
+      display: none;
+    }
+  }
+  &-backgroundMovil {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    overflow: hidden;
+    & .circle {
+      transform: translate(-45%, -45%);
+    }
+  }
+  @media screen and (min-width: 768px) {
+    &-backgroundMovil {
+      display: none;
+    }
+  }
+  & main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 150px;
+    & .logo {
+      margin-top: 64px;
+      width: 130px;
+      height: 58px;
+      margin-bottom: 48.3px;
+    }
+    @media screen and (max-width: 768px) {
+      & .logo {
+        margin-top: 52px;
+        margin-bottom: 38px;
+        width: 115px;
+        height: 38px;
+      }
+    }
+    & .form-container {
+      background-color: white;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      border-radius: 32px;
+      padding-bottom: 72.3px;
+      padding-top: 48.9px;
+      padding-left: 24px;
+      padding-right: 24px;
+      backdrop-filter: blur(15px);
+      box-shadow: 0 0 32px 0 rgba(0, 0, 0, 0.08);
+      width: calc(672px - 48px);
+      @media screen and (min-width: 768px) {
+        & .logo-container-mobile {
+          display: none;
+        }
+      }
+      & .emoji {
+        margin-bottom: 32px;
+      }
+      & .emojiText {
+        font-size: 40px;
+      }
+      & .title {
+        width: calc(100% - 384px);
+        margin-bottom: 32px;
+        margin-top: 0;
+        font-size: 24px;
+        font-weight: 600;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: 0.15px;
+        text-align: center;
+        color: var(--grayscale-body);
+      }
+      @media screen and (max-width: 768px) {
+        & .title {
+          font-size: 22px;
+          font-weight: bold;
+          letter-spacing: normal;
+          width: 100%;
+        }
+      }
+      & .cont {
+        width: calc(100% - 328px);
+      }
+      @media screen and (max-width: 768px) {
+        & .cont {
+          min-width: 70%;
+        }
+      }
+    }
+    @media screen and (max-width: 768px) {
+      & .form-container {
+        width: calc(100% - 48px);
+      }
+    }
+    & .steeper {
+      width: 200px;
+      padding-bottom: 48px;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    & main {
+      padding-bottom: 48px;
+      background-color: var(--grayscale-background);
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container__typebox {
+    background-color: white;
+    min-height: 100%;
+  }
+}

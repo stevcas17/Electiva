@@ -1,0 +1,45 @@
+@mixin for-cellphone-only {
+  @media (max-width: 744px) {
+    @content;
+  }
+}
+
+@mixin for-tablet-only {
+  @media (min-width: 744px) and (max-width: 992px) {
+    @content;
+  }
+}
+
+@mixin for-medium-desktop {
+  @media (min-width: 992px) and (max-width: 1439px) {
+    @content;
+  }
+}
+
+@mixin for-large-desktop {
+  @media (min-width: 1440px) {
+    @content;
+  }
+}
+
+@mixin media($keys...) {
+  @each $key in $keys {
+    @if ($key == for-cellphone-only) {
+      @include for-cellphone-only {
+        @content;
+      }
+    } @else if ($key == for-tablet-only) {
+      @include for-tablet-only {
+        @content;
+      }
+    } @else if ($key == for-medium-desktop) {
+      @include for-medium-desktop {
+        @content;
+      }
+    } @else if ($key == for-large-desktop) {
+      @include for-large-desktop {
+        @content;
+      }
+    }
+  }
+}

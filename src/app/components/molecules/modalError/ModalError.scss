@@ -1,0 +1,109 @@
+@import '../../../../styles/tools/base-breakpoints.scss';
+
+.error-modal-validator {
+  .modal-content {
+    width: fit-content;
+    background-color: var(--grayscale-background);
+  }
+
+  &__content {
+    & .content {
+      &__close {
+        margin: 0 0 auto auto;
+        width: fit-content;
+        cursor: pointer;
+        padding: 0 10px;
+        padding-top: 10px;
+        display: flex;
+      }
+
+      &__header {
+        background-color: white;
+        border-radius: 16px;
+        margin: 0 50px;
+        padding: 20px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        &__img-victor {
+          width: 100%;
+          margin-top: 40px;
+          max-width: 120px;
+        }
+
+        & .header {
+          &__title {
+            padding-top: 16px;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 120%;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: var(--primary-dark);
+          }
+
+          &__description {
+            padding: 8px 30px;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 120%;
+            text-align: center;
+            color: var(--primary-dark);
+          }
+        }
+      }
+
+      &__information {
+        margin: 0 50px;
+        padding: 20px 0;
+
+        & .information {
+          &__title {
+            gap: 16px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 110%;
+            align-items: center;
+            text-align: center;
+            color: var(--primary-dark);
+          }
+
+          &__call {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding-top: 22px;
+          }
+
+          &__scheduler {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 20px 0;
+            align-items: center;
+            & .scheduler__title {
+              font-style: normal;
+              font-weight: 600;
+              font-size: 18px;
+              line-height: 110%;
+              align-items: center;
+              text-align: center;
+              color: var(--primary-dark);
+              margin-bottom: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

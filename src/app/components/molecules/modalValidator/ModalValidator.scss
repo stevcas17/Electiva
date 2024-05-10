@@ -1,0 +1,53 @@
+@import '../../../../styles/tools/base-breakpoints.scss';
+
+.modal-validator {
+  &__content {
+    & .content {
+      &__head {
+        margin: 0 0 auto auto;
+        width: fit-content;
+        cursor: pointer;
+        padding: 0 10px;
+        padding-top: 10px;
+        display: flex;
+      }
+
+      &__info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        & h1 {
+          color: #000927;
+          font-size: 24px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 31px;
+          text-align: center;
+          max-width: 25rem;
+          margin: 0 60px 60px 60px;
+
+          @include media(for-cellphone-only) {
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 27px;
+            max-width: 25rem;
+          }
+        }
+
+        & .info__image {
+          // background-color: var(--gou-light-sky-blue);
+          // border-radius: 50%;
+          height: 125px;
+          margin-top: 26px;
+          width: 125px;
+        }
+      }
+    }
+  }
+
+  .modal-content {
+    width: fit-content;
+  }
+}

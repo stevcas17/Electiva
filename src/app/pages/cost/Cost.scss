@@ -1,0 +1,196 @@
+@import '../../../styles/tools/base-breakpoints.scss';
+
+.container-cost {
+  background-color: var(--gou-grayscale-light-100);
+  width: 100%;
+  &__header {
+    .header {
+      &__image {
+        position: relative;
+        top: 60px;
+        @include media(for-tablet-only) {
+          top: 81px;
+        }
+        @include media(for-cellphone-only) {
+          top: 72px;
+        }
+        img {
+          @include media(for-large-desktop) {
+            height: 40.6rem;
+          }
+          object-fit: cover;
+          object-position: 50% 50%;
+          width: 100%;
+        }
+      }
+      &__description {
+        position: absolute;
+        top: 12.125rem;
+        left: 11rem;
+        max-width: 556px;
+        @include media(for-cellphone-only) {
+          left: 19px;
+          top: 7.125rem;
+          padding-inline-end: 10px;
+        }
+        @include media(for-medium-desktop) {
+          left: 30px;
+          max-width: 492px;
+        }
+        @include media(for-tablet-only) {
+          left: 30px;
+          top: 9.125rem;
+          max-width: 394px;
+        }
+        .description {
+          &__breadcum {
+            width: 60px;
+            @include media(for-cellphone-only) {
+              width: 32px;
+            }
+          }
+          &__title {
+            font-family: 'Montserrat', sans-serif;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 38px;
+            line-height: 46px;
+            display: flex;
+            align-items: center;
+            color: #20304f;
+            @include media(for-cellphone-only) {
+              font-size: 24px;
+              line-height: 110%;
+              margin-block: 15px;
+            }
+            @include media(for-medium-desktop, for-tablet-only) {
+              font-size: 32px;
+              margin-block: 15px;
+            }
+          }
+          &__description {
+            font-family: 'Montserrat', sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 130%;
+            color: #20304f;
+            @include media(for-cellphone-only) {
+              font-size: 14px;
+            }
+            @include media(for-medium-desktop, for-tablet-only) {
+              max-width: 352px;
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &__products {
+    padding-top: 50px;
+    position: relative;
+  }
+
+  &__products-body {
+    margin: 20px auto 20px;
+    padding: 0 24px;
+    width: 100%;
+    @include media(for-cellphone-only) {
+      padding: 0;
+    }
+    //STYLE TABS
+    .active {
+      width: 50%;
+      background-color: #cfd8e6;
+      border-radius: 12px;
+      color: #19223d;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 18px;
+      line-height: 100%;
+      font-weight: 600;
+    }
+    .inactive {
+      color: #adb8cd;
+    }
+    button {
+      width: 50%;
+      min-width: 181px;
+      font-size: 18px;
+      background: transparent;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      font-family: 'Montserrat', sans-serif;
+      transition: all ease-in-out 0.2s;
+      border-bottom: 2px solid transparent;
+      color: #19223d;
+      line-height: 100%;
+      font-weight: 600;
+    }
+    .tab-buttons {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 70%;
+      background: var(--gou-grayscale-light-100);
+      padding: 8px;
+      border-radius: 12px 12px 0px 0px;
+      -webkit-border-radius: 12px 12px 0px 0px;
+      -moz-border-radius: 12px 12px 0px 0px;
+      -ms-border-radius: 12px 12px 0px 0px;
+      -o-border-radius: 12px 12px 0px 0px;
+
+      @include media(for-medium-desktop) {
+        width: 80%;
+        height: 66px;
+        gap: 10px;
+        margin-top: -75px;
+      }
+
+      @include media(for-tablet-only) {
+        width: 100%;
+        overflow-x: auto;
+        height: 66px;
+        gap: 10px;
+        margin-top: 20px;
+      }
+
+      @include media(for-cellphone-only) {
+        width: 100%;
+        overflow-x: auto;
+        height: 66px;
+        gap: 10px;
+        margin-top: -31px;
+        border-radius: 0px;
+        -webkit-border-radius: 0px;
+        -moz-border-radius: 0px;
+        -ms-border-radius: 0px;
+        -o-border-radius: 0px;
+      }
+
+      @include media(for-large-desktop) {
+        width: 57%;
+        height: 66px;
+        margin-top: -117px;
+        gap: 10px;
+      }
+    }
+
+    @include for-tablet-only {
+      margin: 40px auto 0;
+      padding: 0;
+    }
+    @include for-medium-desktop {
+      margin: 14px auto 0;
+      padding: 0;
+      max-width: 1136px;
+    }
+    @include for-large-desktop {
+      margin: 14px auto 0;
+      padding: 0;
+      max-width: 1368px;
+    }
+  }
+}

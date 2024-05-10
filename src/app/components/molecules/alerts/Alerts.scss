@@ -1,0 +1,102 @@
+.container__alert {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 999;
+  &-logout {
+    .body__alert {
+      width: 288px !important;
+      height: 312px;
+      @media only screen and (min-width: 740px) {
+        width: 589px !important;
+        height: 404px;
+      }
+      &-content {
+        max-width: 100%;
+        @media only screen and (min-width: 740px) {
+          max-width: 50%;
+        }
+      }
+    }
+  }
+  &-large-size {
+    .body__alert {
+      width: 288px !important;
+      @media only screen and (min-width: 740px) {
+        width: 589px !important;
+        height: 404px;
+      }
+      &-content {
+        max-width: 100%;
+        @media only screen and (min-width: 740px) {
+          max-width: 50%;
+        }
+      }
+    }
+  }
+  &-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  .body__alert {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 272px;
+    min-height: 326px;
+    background-color: white;
+    border-radius: 24px;
+    padding: 24px;
+    box-sizing: border-box;
+    position: relative;
+    &-close {
+      position: absolute;
+      top: 16px;
+      right: 16px;
+    }
+    &-content {
+      &-message,
+      &-description {
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: var(--secondary-dark-1000);
+        margin-bottom: 12px;
+      }
+      &-message {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 32px;
+        text-align: center;
+        color: var(--secondary-dark-1000);
+      }
+      &-description {
+        font-size: 16px;
+        font-weight: normal;
+      }
+    }
+    &-button {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      @media only screen and (max-width: 740px) {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 15px;
+        gap: 20px;
+      }
+      .btnContinue {
+        width: 163px;
+        margin: 0 auto;
+      }
+    }
+  }
+}

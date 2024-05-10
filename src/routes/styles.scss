@@ -1,0 +1,19 @@
+.loadingMiniStyle {
+  // top: 0;
+  // left: 0;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  position: fixed;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  background-color: rgba(255, 255, 255, 0.1);
+  &__ldsDualRing {
+    display: inline-block;
+    width: 180px;
+    height: 180px;
+  }
+}

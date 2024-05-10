@@ -1,0 +1,207 @@
+.container__input {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  &-title {
+    justify-content: start;
+    flex-direction: row;
+    align-items: center;
+    display: flex;
+
+    label {
+      color: var(--grayscale-body);
+      font-size: 16px;
+      font-weight: 500;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 24px;
+      letter-spacing: normal;
+      margin-bottom: 6px;
+    }
+  }
+
+  &-body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: calc(100% - 20px);
+    padding-right: 10;
+    padding-left: 10;
+    border-radius: 12px;
+    background-color: var(--grayscale-input-background);
+    border-color: var(--grayscale-input-background);
+    border-width: 2px;
+    border-style: solid;
+
+    input {
+      background-color: transparent;
+      border-color: transparent;
+      border-style: solid;
+      min-height: 52px;
+      width: 100%;
+      padding-top: 0;
+      padding-bottom: 0;
+      font-size: 16px;
+
+      &::placeholder {
+        color: var(--grayscale-label);
+        font-size: 16px;
+      }
+
+      &:active,
+      &:focus {
+        outline: none;
+      }
+
+      &:disabled {
+        border-color: var(--grayscale-background);
+        cursor: no-drop;
+
+        &::placeholder {
+          color: var(--grayscale-line);
+        }
+
+        &:hover {
+          border-color: var(--grayscale-background);
+        }
+      }
+    }
+
+    &Icon {
+      padding-right: 0;
+      padding-left: 0;
+    }
+
+    &:focus-within {
+      outline: none;
+      border-color: var(--grayscale-label);
+      background-color: white;
+      border-width: 2px;
+      border-radius: 16px;
+    }
+
+    &:hover {
+      background-color: white;
+      border-width: 2px;
+      border-color: var(--grayscale-label);
+    }
+
+    &.disabled {
+      background-color: var(--grayscale-background);
+      cursor: no-drop;
+
+      &:hover {
+        border-color: var(--grayscale-background);
+      }
+    }
+  }
+
+  &-assistiveText {
+    width: 100%;
+    height: 17px;
+    padding-left: 10px;
+    font-size: 12px;
+    color: var(--grayscale-label);
+    margin-bottom: 15px;
+  }
+
+  &-info {
+    width: 100%;
+    height: 17px;
+    // padding-left: 10px;
+    font-size: 12px;
+    color: var(--grayscale-label);
+    margin-bottom: 15px;
+  }
+
+  & .errorText {
+    color: var(--states-error);
+  }
+
+  &.formInput {
+    &.formInput .container__input-body {
+      width: auto;
+      padding-right: 10px;
+      padding-left: 10px;
+      border-radius: 12px;
+      -webkit-border-radius: 12px;
+      -moz-border-radius: 12px;
+      -ms-border-radius: 12px;
+      -o-border-radius: 12px;
+      background-color: var(--gou-grayscale-light-100);
+      border-color: transparent;
+      border-width: 1px;
+
+      input {
+        min-height: 54px;
+        padding: 0;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        font-weight: 500;
+        border-width: 0;
+        font-family: inherit;
+
+        &:-webkit-autofill,
+        &:-webkit-autofill:hover,
+        &:-webkit-autofill:focus,
+        &:-webkit-autofill:active {
+          transition: background-color 9999999s ease-in-out 0s;
+        }
+
+        &::placeholder {
+          color: var(--gou-grayscale-light-400);
+          //color: var(--primary-dark-600);
+          // font-size: 16px;
+        }
+
+        &:active {
+          outline: none;
+        }
+
+        &:focus {
+          outline: none;
+
+          &:-webkit-autofill {
+            -webkit-box-shadow: 0 0 0 30px #ffffff inset !important;
+            box-shadow: 0 0 0 30px #ffffff inset !important;
+          }
+        }
+
+        &:disabled {
+          border-color: var(--gou-grayscale-light-100);
+          cursor: no-drop;
+
+          &::placeholder {
+            color: var(--gou-grayscale-light-100);
+          }
+
+          &:hover {
+            border-color: var(--gou-grayscale-light-100);
+          }
+        }
+      }
+    }
+  }
+
+  &.error {
+    &.formInput .container__input-body {
+      border-color: var(--states-error);
+      background-color: var(--background-states-error);
+
+      & input {
+        &::placeholder {
+          color: var(--primary-dark-600);
+        }
+      }
+    }
+  }
+
+  &.success {
+    &.formInput .container__input-body {
+      border-color: var(--states-success);
+      background-color: var(--background-states-sucess);
+    }
+  }
+}

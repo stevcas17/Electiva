@@ -1,0 +1,46 @@
+@import '../../../../styles/tools/base-breakpoints.scss';
+.menu-desktop {
+  display: none;
+  @include media(for-medium-desktop, for-large-desktop) {
+    min-width: 244px;
+    padding-inline: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: auto;
+    &__greeting {
+      color: var(--brand-dark-blue);
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 32px;
+      margin: 32px 0;
+    }
+    &__user-info {
+      display: flex;
+      align-items: center;
+      justify-content: start;
+      margin-bottom: 32px;
+      &-user-photo {
+        width: 48px;
+        height: 48px;
+        margin-right: 16px;
+        margin-left: -4px;
+        border-radius: 50%;
+        border: solid 1px var(--brand-dark-blue);
+        // padding: 15px;
+        color: var(--grayscale-placeholder);
+        background-color: var(--grayscale-input-background);
+      }
+      &-user-name {
+        font-weight: 500;
+        color: var(--secondary-dark-800);
+        font-size: 18px;
+      }
+    }
+    &__nav-hr {
+      height: 1px;
+      background-color: var(--secondary-light-200);
+      margin-bottom: 32px;
+    }
+  }
+}

@@ -1,0 +1,178 @@
+@import '../../../styles/tools/base-breakpoints.scss';
+
+.container-validator {
+  background-color: var(--gou-grayscale-light-100);
+  width: 100%;
+  position: absolute;
+
+  &__information {
+    padding-top: 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include media(for-cellphone-only) {
+      padding-top: 160px;
+    }
+
+    & .information {
+      &__image {
+        width: 300px;
+        height: 300px;
+      }
+
+      &__description {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 22px;
+
+        & h1 {
+          font-style: normal;
+          font-weight: 500;
+          font-size: 28px;
+          line-height: 35px;
+          color: #000927;
+          max-width: 30rem;
+          text-align: center;
+
+          @include media(for-cellphone-only) {
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 31px;
+          }
+        }
+
+        & .description {
+          &__divider {
+            display: flex;
+            justify-content: center;
+
+            .vl {
+              border-top: 6px solid #9d14f3;
+              width: 68px;
+              height: 6px;
+              margin-bottom: 30px;
+              margin-top: 20px;
+            }
+          }
+
+          &__actions {
+            display: flex;
+            justify-content: center;
+
+            & .actions {
+              &__select-button {
+                background-color: var(--sky-blue);
+                border-style: none;
+                color: var(--primary-dark);
+                letter-spacing: 0.12px;
+                margin-bottom: 4rem;
+                max-width: 264px;
+                width: 100%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &__Form-page {
+    padding-top: 146px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include media(for-cellphone-only) {
+      padding-top: 126px;
+    }
+
+    & .Form-page {
+      &__header {
+        & .header {
+          &__title {
+            color: var(--grayscale-dark-1000);
+            font-size: 24px;
+            font-stretch: normal;
+            font-style: normal;
+            font-weight: 650;
+            letter-spacing: normal;
+            line-height: 32px;
+            margin: 0 auto;
+            margin-bottom: 1rem;
+
+            @include media(for-cellphone-only) {
+              font-weight: 600;
+              font-size: 20px;
+              line-height: 27px;
+              text-align: center;
+            }
+          }
+
+          &__descrip {
+            color: var(--gou-grayscale-dark-800);
+            font-size: 16px;
+            font-stretch: normal;
+            font-style: normal;
+            font-weight: 500;
+            letter-spacing: normal;
+            line-height: 24px;
+            margin: 0 auto;
+            margin-bottom: 2rem;
+            text-align: center;
+
+            @include media(for-cellphone-only) {
+              font-weight: 600;
+              font-size: 14px;
+              line-height: 20px;
+            }
+          }
+        }
+      }
+
+      &__body {
+        background-color: var(--gou-grayscale-white);
+        border-radius: 32px;
+        box-shadow: 0 0 32px 0 rgba(0, 0, 0, 0.08);
+        height: fit-content;
+        width: 460px;
+        margin-bottom: 40px;
+        max-height: initial;
+        padding-bottom: 0px;
+        z-index: 1;
+
+        @include media(for-cellphone-only, for-tablet-only) {
+          width: auto;
+        }
+
+        & .body {
+          &__form {
+            padding: 2rem 4rem;
+            text-align: left;
+            @include media(for-cellphone-only, for-tablet-only) {
+              padding: 2rem 2rem;
+            }
+          }
+
+          &__actions {
+            display: flex;
+            justify-content: center;
+
+            & .actions {
+              &__validate-button {
+                background-color: var(--sky-blue);
+                border-style: none;
+                color: var(--primary-dark);
+                letter-spacing: 0.12px;
+                margin-bottom: 4rem;
+                max-width: 264px;
+                width: 100%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

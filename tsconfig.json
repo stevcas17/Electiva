@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "moduleResolution": "node",
+    "baseUrl": "./src/",
+    "skipLibCheck": true,
+    "paths": {
+      "Assets": ["./assets/*"]
+    }
+  }
+}

@@ -1,0 +1,129 @@
+.errorbox {
+  position: relative;
+  background-color: var(--gou-grayscale-light-100);
+  min-height: 100vh;
+  width: 100%;
+  overflow: inherit;
+  @media screen and (min-width: 740px) {
+    min-height: 100%;
+  }
+  .header__mobile,
+  .header__tablet,
+  .header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 56px;
+    img {
+      object-fit: cover;
+      width: inherit;
+    }
+  }
+  .header__mobile {
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
+  }
+  .header__tablet {
+    display: none;
+    @media screen and (min-width: 768px) {
+      display: block;
+    }
+    @media screen and (min-width: 1200px) {
+      display: none;
+    }
+  }
+  .header {
+    display: none;
+    @media screen and (min-width: 1200px) {
+      display: block;
+      height: 72px;
+    }
+  }
+  main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    @media screen and (min-width: 740px) {
+      height: 100vh;
+    }
+    @media screen and (min-width: 1200px) {
+      padding-top: 5rem;
+    }
+  }
+  &__container {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 32px;
+    padding: 0 24px;
+    padding-top: 48.9px;
+    padding-bottom: 72.3px;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 0 32px 0 rgba(0, 0, 0, 0.08);
+    width: calc(100% - 48px);
+    margin-top: 6.5rem;
+    margin-bottom: 2rem;
+    @media screen and (min-width: 768px) {
+      margin-top: unset;
+      width: 504px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: calc(672px - 48px);
+    }
+  }
+  &__image {
+    margin-bottom: 32px;
+    width: 100%;
+    max-width: 171px;
+  }
+  &__title,
+  &__message {
+    text-align: center;
+  }
+  &__title {
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 0.25rem;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    color: var(--grayscale-dark-1000);
+    @media screen and (min-width: 740px) {
+      width: 70%;
+    }
+  }
+  &__message {
+    color: var(--grayscale-dark-1000);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    width: 70%;
+    margin-top: 0.25rem;
+    margin-bottom: 1.5rem;
+    @media screen and (min-width: 1200px) {
+      width: 50%;
+    }
+  }
+  &__btn {
+    width: 90%;
+    padding: 0 25px;
+    order: 3;
+    background-color: var(--sky-blue);
+    &:hover {
+      background-color: darken(#00ddf4, 5);
+    }
+    @media screen and (min-width: 740px) {
+      width: 328px;
+    }
+  }
+  footer {
+    & > div {
+      &:first-child {
+        width: 100%;
+      }
+    }
+  }
+}

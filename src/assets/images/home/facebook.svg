@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="34px" height="34px" viewBox="0 0 34 34" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Facebook</title>
+    <g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Verificar-celular" transform="translate(-176.000000, -961.000000)" fill-rule="nonzero">
+            <g id="Footer" transform="translate(0.000000, 926.000000)">
+                <g id="Facebook" transform="translate(176.000000, 35.000000)">
+                    <circle id="Oval" fill="#0C1B2B" cx="16.8001" cy="16.79993" r="16.7999"></circle>
+                    <path d="M16.8,0 C7.5215,0 0,7.52153 0,16.80003 C0,26.07853 7.5215,33.60003 16.8,33.60003 C26.0785,33.60003 33.6,26.07853 33.6,16.80003 C33.6,7.52153 26.0785,0 16.8,0 Z M20.7795,11.60953 L18.2543,11.60953 C17.955,11.60953 17.6225,12.00323 17.6225,12.52653 L17.6225,14.35003 L20.7813,14.35003 L20.3035,16.95053 L17.6225,16.95053 L17.6225,24.75723 L14.6423,24.75723 L14.6423,16.95053 L11.9385,16.95053 L11.9385,14.35003 L14.6423,14.35003 L14.6423,12.82053 C14.6423,10.62603 16.1648,8.84273 18.2543,8.84273 L20.7795,8.84273 L20.7795,11.60953 Z" id="Shape" fill="#FFFFFF"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

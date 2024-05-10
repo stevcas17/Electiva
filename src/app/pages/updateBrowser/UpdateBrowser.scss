@@ -1,0 +1,28 @@
+@import '../../../styles/tools/base-breakpoints.scss';
+@import '../../components/molecules/errorBox/ErrorBox.scss';
+
+.errorbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  .errorbox_main {
+    // height: 100%;
+    @media screen and (min-width: 740px) {
+      height: 100%;
+    }
+  }
+}
+
+.errorbox__link {
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+
+.errorbox .errorbox__container .errorbox__btn {
+  border-width: 1px;
+}
+._ext {
+  @media screen and (min-width: 740px) {
+    min-height: 100vh !important;
+  }
+}

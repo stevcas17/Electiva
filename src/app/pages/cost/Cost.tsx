@@ -43,7 +43,7 @@ export default ({ history }: { history: History }): JSX.Element => {
             <Tab label="Código QR">
               <Qr history={history} />
             </Tab>
-            <Tab label="Link de pagos - Micrositios - Pasarela">
+            <Tab label="Link de Pagos - Micrositios - Pasarela">
               <Microsites history={history} />
             </Tab>
           </Tabs>
